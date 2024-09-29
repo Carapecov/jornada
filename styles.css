@@ -1,0 +1,110 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+    background: linear-gradient(45deg, #0099ffde, #101c5e);
+    background-size: 400% 400%;
+    animation: gradientAnimation 15s ease infinite;
+  }
+  
+  @keyframes gradientAnimation {
+    0% { background-position: 20% 20%; }
+    70% { background-position: 100% 100%; }
+    100% { background-position: 100% 100%; }
+  }
+  
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #f1ee08;
+    text-decoration: none;
+}
+
+main {
+    padding: 2rem 0;
+}
+
+section {
+    margin: 2rem 0;
+}
+
+.service {
+    background: #f4f4f4;
+    padding: 1rem;
+    margin: 1rem 0;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin-bottom: 0.5rem;
+}
+
+form input, form textarea {
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+}
+
+form button {
+    padding: 0.7rem;
+    border: none;
+    background: #333;
+    color: #fff;
+    cursor: pointer;
+}
+
+form button:hover {
+    background: #555;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        text-align: center;
+    }
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+}
